@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS styling for CSS Android */
+
+body{
+	      background-image:url(../images/602.jpg);
+		  margin:0;
+		  height:100vh;
+		 } 
+	*{
+          box-sizing:border-box;
+    }		  
+     main{
+	      width:39%;
+		  height:75%;
+		  background-color:#35364d;
+		  margin:0px auto;
+		  margin-top:20px;
+		  margin-bottom:70px;
+		  padding-top:90px;
+		  position:relative;
+		 } 
+	 main::before{
+          content:"";
+          width:150px;
+		  background-color:#2b2c3e;
+		  box-shadow:0px 0px 10px 10px #2b2c3e;
+		  position:absolute;
+		  bottom:2px;
+		  z-index:-1;
+		  right:12px;
+		  transform:rotate(8deg);
+		}
+    main::after{
+          content:"";
+          width:150px;
+		  background-color:#2b2c3e;
+		  box-shadow:0px 0px 10px 10px #2b2c3e;
+		  position:absolute;
+		  bottom:2px;
+		  z-index:-1;
+		  left:12px;
+		  transform:rotate(-8deg);
+		}
+	.droid-head{
+          width:220px;
+          height:120px;
+          background-color:rgb(152,196,21);
+          margin:0 auto;
+          border-radius:50%;
+		  position:relative;
+        }	
+	.droid-head::before{
+          content:"";
+          width:5px;
+          height:40px;
+          background-color:rgb(145,186,20);
+		  border-top-left-radius:2px;
+		  border-top-right-radius:2px;
+          position:absolute;
+		  left:50px;
+		  top:-20px;
+		  transform:rotate(-25deg);
+        }
+    .droid-head::after{
+          content:"";
+          width:5px;
+          height:40px;
+          background-color:rgb(145,186,20);
+		  border-top-left-radius:2px;
+		  border-top-right-radius:2px;
+          position:absolute;
+		  left:160px;
+		  top:-20px;
+		  transform:rotate(25deg);
+        }	
+    .eye1{
+          width:15px;
+          height:15px;
+          background-color:rgba(255,255,255,0.4);
+          border-radius:50%;
+		  position:absolute;
+		  top:28px;
+		  left:60px;
+        }
+    .eye2{
+          width:15px;
+          height:15px;
+          background-color:rgba(255,255,255,0.4);
+          border-radius:50%;
+		  position:absolute;
+		  top:28px;
+		  left:140px;
+        }		
+    .mask{
+          width:220px;
+          height:20px;
+          background-color:#35364d;
+          margin:0 auto;
+		  position:relative;
+		  top:-60px;
+        }	
+    .droid-body{
+          width:220px;
+          height:180px;
+          background:linear-gradient(45deg, rgb(149,191,21), rgb(152,196,21));
+		  margin:0 auto;
+		  border-bottom-left-radius:8px;
+		  border-bottom-right-radius:8px;
+		  position:relative;
+		  top:-75px;
+        }	
+    .left-hand{
+          width:50px;
+          height:130px;
+          background-color:rgb(152,196,21);
+		  border-radius:50px;
+          position:absolute;
+		  top:140px;
+		  left:80px;
+        }
+    .right-hand{
+          width:50px;
+          height:130px;
+          background-color:rgb(152,196,21);
+		  border-radius:50px;
+          position:absolute;
+		  top:140px;
+		  right:80px;
+        }
+    .left-leg{
+          width:50px;
+          height:70px;
+          background-color:rgb(152,196,21);
+          border-bottom-left-radius:50px;
+		  border-bottom-right-radius:50px;
+          position:absolute;
+		  left:160px;
+		  top:344px;
+        }
+    .right-leg{
+          width:50px;
+          height:70px;
+          background-color:rgb(152,196,21);
+          border-bottom-left-radius:50px;
+		  border-bottom-right-radius:50px;
+          position:absolute;
+		  left:288px;
+		  top:344px;
+        }
+	footer{
+			padding:10px 0px;
+			background-color:darkslategray;
+			background:linear-gradient(to right, darkslategray, #368383, darkslategray);
+		}	
+	footer img{
+			width:10%;
+			display:block;
+			margin:0 auto;
+			padding-right:20px;
+		    border-right:1px dotted #fff;
+			position:relative;
+		}	
+	footer::after{
+			content:"\00A9" "Somnath Mukherjee";
+			position:absolute;
+			bottom:40px;
+			left:740px;
+			color:#eaeaea;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		}

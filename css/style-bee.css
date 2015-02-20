@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS styling for CSS Bee */
+
+@-webkit-keyframes eyeMove{
+	from{
+		transform:translateX(6px);
+	}
+	to{
+		transform:translateX(0px);
+	}
+  }
+  @-webkit-keyframes wing1Move{
+	from{
+		transform:rotate(30deg);
+	}
+	to{
+		transform:rotate(40deg);
+	}
+  }
+  @-webkit-keyframes wing2Move{
+	from{
+		transform:rotate(55deg);
+	}
+	to{
+		transform:rotate(65deg);
+	}
+  }
+  body{
+	      background-image:url(../images/602.jpg);
+		  margin:0;
+		  height:100vh;
+		 } 
+	*{
+          box-sizing:border-box;
+    }		  
+     main{
+	      width:39%;
+		  height:75%;
+		  background-color:#35364d;
+		  margin:0px auto;
+		  margin-top:20px;
+		  margin-bottom:70px;
+		  padding:160px 60px 0px;
+		  position:relative;
+		  /*z-index:1;*/
+		 } 
+	 main::before{
+          content:"";
+          width:150px;
+		  background-color:#666;
+		  box-shadow:0px 0px 10px 10px #2b2c3e;
+		  position:absolute;
+		  bottom:2px;
+		  z-index:-1;
+		  right:12px;
+		  transform:rotate(8deg);
+		}
+    main::after{
+          content:"";
+          width:150px;
+		  background-color:#666;
+		  box-shadow:0px 0px 10px 10px #2b2c3e;
+		  position:absolute;
+		  bottom:2px;
+		  z-index:-1;
+		  left:12px;
+		  transform:rotate(-8deg);
+		}
+	.bee-wrapper{
+		margin:0 auto;
+		position:relative;
+		z-index:1;
+	}	
+	
+	.bee-head{
+		width:80px;
+		height:90px;
+		border-radius:50%;
+		background:linear-gradient(to right, orange, rgb(233,113,3));
+		box-shadow:1px 0px 3px #e9431b;
+		margin-left:60px;
+		display:inline-block;
+		position:relative;
+		top:-66px;
+		z-index:3;
+	}
+	.bee-eye1{
+		width:18px;
+		height:18px;
+		background:#eaeaea;
+		border-radius:50%;
+		display:inline-block;
+		position:relative;
+		top:16px;
+		left:-2px;
+	}
+	.bee-eye1::after{
+		content:"";
+		width:8px;
+		height:8px;
+		border-radius:50%;
+		background:#000;
+		position:absolute;
+		top:2px;
+		left:2px;
+		-webkit-animation:eyeMove 1s linear infinite alternate;
+	}
+	.bee-eye2{
+		width:24px;
+		height:24px;
+		background:#eaeaea;
+		border-radius:50%;
+		display:inline-block;
+		position:relative;
+		top:23px;
+		left:10px;
+	}
+	.bee-eye2::after{
+		content:"";
+		width:11px;
+		height:11px;
+		border-radius:50%;
+		background:#000;
+		position:absolute;
+		top:4px;
+		left:3px;
+		-webkit-animation:eyeMove 1s linear infinite alternate;
+	}
+	.bee-lip{
+		width:30px;
+		height:20px;
+		box-sizing:border-box;
+		border:5px solid coral;
+		border-color:transparent transparent purple transparent;
+		border-radius:50%;
+		display:inline-block;
+		position:relative;
+		top:50px;
+		left:-40px;
+	}
+	.bee-head::before{
+		content:"";
+		width:28px;
+		height:68px;
+		box-sizing:border-box;
+		border:2px solid #111;
+		border-color:transparent #111 transparent transparent;
+		border-radius:50%;
+		position:absolute;
+		top:-55px;
+		left:0px;
+		display:inline-block;
+		transform:rotate(-25deg);
+	}
+	.bee-head::after{
+		content:"";
+		width:28px;
+		height:68px;
+		box-sizing:border-box;
+		border:2px solid #111;
+		border-color:transparent #111 transparent transparent;
+		border-radius:50%;
+		position:absolute;
+		top:-47px;
+		left:-16px;
+		display:inline-block;
+		transform:rotate(-35deg);
+	}
+	.bee-body{
+		width:180px;
+		height:100px;
+		background-color:orange;
+		background-image:linear-gradient(to right, #f04a23 50%, #333 50%);
+		border-radius:40% 50% 50% 40%;
+		display:inline-block;
+		position:relative;
+		left:-35px;
+		top:16px;
+		transform:rotate(8deg);
+	}
+	.bee-body::after{
+		content:"";
+		border:16px solid #333;
+		border-color:transparent transparent transparent #333;
+		position:absolute;
+		left:176px;
+		top:32px;
+	}
+	.bee-wing1{
+		width:70px;
+		height:160px;
+		background:linear-gradient(35deg, #268bb4 10%, skyblue 90%);
+		border-radius:50%;
+		border:2px solid #268bb4;
+		margin-left:10px;
+		box-sizing:border-box;
+		display:inline-block;
+		position:absolute;
+		z-index:-1;
+		top:-110px;
+		left:150px;
+		transform:rotate(40deg);
+		-webkit-animation:wing1Move 1s ease-in-out infinite alternate;
+	}
+	.bee-wing2{
+		width:70px;
+		height:160px;
+		background:linear-gradient(35deg, #268bb4 5%, skyblue 95%);
+		border-radius:50%;
+		border:2px solid #268bb4;
+		box-sizing:border-box;	
+		display:inline-block;
+		position:absolute;
+		z-index:3;
+		top:-90px;
+		left:184px;
+		transform:rotate(65deg);
+		-webkit-animation:wing2Move 1s ease-in-out infinite alternate;
+	}
+	footer{
+			padding:10px 0px;
+			background-color:darkslategray;
+			background:linear-gradient(to right, darkslategray, #368383, darkslategray);
+		}	
+	footer img{
+			width:10%;
+			display:block;
+			margin:0 auto;
+			padding-right:20px;
+		    border-right:1px dotted #fff;
+			position:relative;
+		}	
+	footer::after{
+			content:"\00A9" "Somnath Mukherjee";
+			position:absolute;
+			bottom:40px;
+			left:740px;
+			color:#eaeaea;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		}

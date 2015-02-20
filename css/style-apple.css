@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+
+@-webkit-keyframes animate1{
+	from,to{
+		opacity:0;
+		}
+}
+@-moz-keyframes animate1{
+	from,to{
+		opacity:0;
+		}
+}
+@-o-keyframes animate1{
+	from,to{
+		opacity:0;
+		}
+}
+@-ms-keyframes animate1{
+	from,to{
+		opacity:0;
+		}
+}
+@keyframes animate1{
+	from,to{
+		opacity:0;
+		}
+}
+@-webkit-keyframes animate2{
+	from{
+	    width:0px;
+		height:0px;
+		background:linear-gradient(to bottom,#008444 50%,#009a49 50%);
+		}
+	to{
+	    width:100px;
+		height:40px;
+		background:linear-gradient(to bottom,#02691f 50%,#039c2e 50%);
+		}
+	}
+@-moz-keyframes animate2{
+	from{
+	    width:0px;
+		height:0px;
+		background:linear-gradient(to bottom,#008444 50%,#009a49 50%);
+		}
+	to{
+	    width:100px;
+		height:40px;
+		background:linear-gradient(to bottom,#02691f 50%,#039c2e 50%);
+		}
+	}
+@-o-keyframes animate2{
+	from{
+	    width:0px;
+		height:0px;
+		background:linear-gradient(to bottom,#008444 50%,#009a49 50%);
+		}
+	to{
+	    width:100px;
+		height:40px;
+		background:linear-gradient(to bottom,#02691f 50%,#039c2e 50%);
+		}
+	}	
+@-ms-keyframes animate2{
+	from{
+	    width:0px;
+		height:0px;
+		background:linear-gradient(to bottom,#008444 50%,#009a49 50%);
+		}
+	to{
+	    width:100px;
+		height:40px;
+		background:linear-gradient(to bottom,#02691f 50%,#039c2e 50%);
+		}
+	}
+@keyframes animate2{
+	from{
+	    width:0px;
+		height:0px;
+		background:linear-gradient(to bottom,#008444 50%,#009a49 50%);
+		}
+	to{
+	    width:100px;
+		height:40px;
+		background:linear-gradient(to bottom,#02691f 50%,#039c2e 50%);
+		}
+	}
+		
+body{
+	      background-image:url(../images/602.jpg);
+		  margin:0;
+		  height:100vh;
+		 } 
+     main{
+	      width:39%;
+		  height:75%;
+		  background-color:#35364d;
+		  margin:0px auto;
+		  margin-top:20px;
+		  margin-bottom:70px;
+		  position:relative;
+		  display:block;
+		 } 
+	 main::before{
+          content:"";
+          width:150px;
+		  background-color:#666;
+		  box-shadow:0px 0px 10px 10px #2b2c3e;
+		  position:absolute;
+		  bottom:2px;
+		  z-index:-1;
+		  right:12px;
+		  transform:rotate(8deg);
+		}
+    main::after{
+          content:"";
+          width:150px;
+		  background-color:#666;
+		  box-shadow:0px 0px 10px 10px #2b2c3e;
+		  position:absolute;
+		  bottom:2px;
+		  z-index:-1;
+		  left:12px;
+		  transform:rotate(-8deg);
+		}		
+     #one{
+	      width:24%;
+		  height:24%;
+		  border-top-left-radius:50%;
+		  border-top-right-radius:50%;
+		  border-bottom-left-radius:40%;
+		  border-bottom-right-radius:40%;
+		  background-color:#e60033;
+		  background-image:linear-gradient(to right,#a81a2e,#cc0a2f,#e60033);
+		  position:relative;
+		  left:130px;
+		  top:160px;
+		  display:inline-block;
+		} 	
+	 #one::after{
+          content:"";
+		  width:100px;
+		  height:40px;
+          background-color:#009a49;
+		  background-image:linear-gradient(to bottom,#008444 50%,#009a49 50%);
+          border-radius:50%;
+          position:absolute;
+		  top:-70px;
+		  left:100px;
+		  transform:rotate(-45deg);
+		  -webkit-animation:animate2 5s ease-out;
+		  transition:all 5s ease-out;
+        }		  
+	 #two{
+          width:120px;
+		  height:120px;
+		  border-top-left-radius:50%;
+		  border-top-right-radius:50%;
+          border-bottom-right-radius:40%;		  
+		  background-color:#e60033;
+		  background-image:linear-gradient(to right,rgba(204,10,47,0.5) 2%,rgba(230,0,51,1) 98%);
+		  position:relative;
+		  left:90px;
+		  top:160px;
+		  display:inline-block;
+        }	
+     #three{
+          width:120px;
+		  height:120px;
+		  border-top-left-radius:50%;
+		  border-top-right-radius:50%;
+		  border-bottom-right-radius:50%;
+		  border-bottom-left-radius:48%;
+		  background-color:#e60033;
+		  background-image:linear-gradient(to right,#a81a2e,#cc0a2f,#e60033);
+		  position:relative;
+		  left:-111.1111px;
+		  top:178px;
+		  display:inline-block;
+        }	
+     #four{
+          width:120px;
+		  height:120px;
+		  border-top-left-radius:50%;
+		  border-top-right-radius:50%;
+		  border-bottom-right-radius:48%;
+		  border-bottom-left-radius:48%;
+		  background-color:#e60033;
+		  background-image:linear-gradient(to right,rgba(204,10,47,0.5) 1%,rgba(230,0,51,1) 99%);
+		  position:relative;
+		  left:-162px;
+		  top:178px;
+		  display:inline-block;
+        } 
+	  #four::before{
+          content:"";
+          width:22px;
+          height:52px;
+          background-color:rgba(255,255,255,1);
+		  background-image:url(../images/light_grey.png);
+          border-radius:50%;
+          position:absolute;
+		  right:-6px;
+		  transform:rotate(-23deg);
+		  -webkit-animation-name:animate1;
+		  -webkit-animation-duration:1s;
+		  -webkit-animation-timing-function:ease-in-out;
+        }		
+      	  #four::after{
+          content:"";
+          width:22px;
+          height:52px;
+		  background:#35364d;
+          border-radius:50%;
+          position:absolute;
+		  right:-10px;
+		  transform:rotate(-20deg);
+		  -webkit-animation-name:animate1;
+		  -webkit-animation-duration:1s;
+		  -webkit-animation-timing-function:ease-in-out;
+        }		
+	 #five{
+          width:120px;
+          height:120px;
+          background-color:#e60033;
+		  background-image:linear-gradient(to right,#a81a2e,#cc0a2f,#e60033);		  
+		  border-top-left-radius:48%;
+		  border-bottom-left-radius:50%;
+		  border-bottom-right-radius:50%;
+          position:relative;
+          top:73px;
+		  left:152px;
+          display:inline-block;
+        }		
+     		  
+	 #six{
+          width:120px;
+          height:120px;
+          background-color:#e60033;
+		  background:-webkit-linear-gradient(to right,#cc0a2f,#e60033 95%);
+		  background:-moz-linear-gradient(to right,#cc0a2f,#e60033 95%);
+		  background:-ms-linear-gradient(to right,#cc0a2f,#e60033 95%);
+		  background:linear-gradient(to right,#cc0a2f,#e60033 95%);
+		  border-top-left-radius:48%;
+		  border-top-right-radius:48%;
+		  border-bottom-left-radius:50%;
+		  border-bottom-right-radius:50%;
+          position:relative;
+          top:73px;
+		  left:71px;
+          display:inline-block;
+        }
+	footer{
+			padding:10px 0px;
+			background-color:darkslategray;
+			background:linear-gradient(to right, darkslategray, #368383, darkslategray);
+		}	
+	footer img{
+			width:10%;
+			display:block;
+			margin:0 auto;
+			padding-right:20px;
+		    border-right:1px dotted #fff;
+			position:relative;
+		}	
+	footer::after{
+			content:"\00A9" "Somnath Mukherjee";
+			position:absolute;
+			bottom:40px;
+			left:740px;
+			color:#eaeaea;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		}	

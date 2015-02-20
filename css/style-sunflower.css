@@ -1,0 +1,576 @@
+@charset "utf-8";
+/* CSS styling for CSS Sunflower */
+
+body{
+	      background-image:url(../images/602.jpg);
+		  margin:0;
+		  height:100vh;
+		 } 
+	*{
+          box-sizing:border-box;
+    }		
+
+/* Keyframe animation definition for all 21 petals */
+	
+	@-webkit-keyframes animate1{
+		from{
+			transform-origin:center bottom;
+			transform:scale(0.5);
+		}
+		to{
+			transform-origin:center bottom;
+		    transform:scale(1);
+		}
+	}
+	@-webkit-keyframes animate2{
+		from{
+			transform-origin:-23px bottom;
+			transform:rotate(15deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(15deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate3{
+		from{
+			transform-origin:-130px bottom;
+			transform:rotate(30deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(30deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate4{
+		from{
+			transform-origin:-160px bottom;
+			transform:rotate(45deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(45deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate5{
+		from{
+			transform-origin:-90px center;
+			transform:rotate(65deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(65deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate6{
+		from{
+			transform-origin:-70px center;
+			transform:rotate(85deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(85deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate7{
+		from{
+			transform-origin:-40px center;
+			transform:rotate(105deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(105deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate8{
+		from{
+			transform-origin:-20px center;
+			transform:rotate(120deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(120deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate9{
+		from{
+			transform-origin:-10px top;
+			transform:rotate(130deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(130deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate10{
+		from{
+			transform-origin:-30px top;
+			transform:rotate(150deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(150deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate11{
+		from{
+			transform-origin:0px top;
+			transform:rotate(170deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(170deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate12{
+		from{
+			transform-origin:0px top;
+			transform:rotate(180deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(180deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate13{
+		from{
+			transform-origin:0px top;
+			transform:rotate(195deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(195deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate14{
+		from{
+			transform-origin:20px top;
+			transform:rotate(215deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(215deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate15{
+		from{
+			transform-origin:60px top;
+			transform:rotate(235deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(235deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate16{
+		from{
+			transform-origin:90px top;
+			transform:rotate(255deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(255deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate17{
+		from{
+			transform-origin:110px top;
+			transform:rotate(275deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(275deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate18{
+		from{
+			transform-origin:130px top;
+			transform:rotate(295deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(295deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate19{
+		from{
+			transform-origin:150px top;
+			transform:rotate(310deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(310deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate20{
+		from{
+			transform-origin:170px top;
+			transform:rotate(330deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(330deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate21{
+		from{
+			transform-origin:190px top;
+			transform:rotate(345deg) scale(0.5);
+		}
+		to{
+		    transform:rotate(345deg) scale(1);
+		}
+	}
+	@-webkit-keyframes animate22{
+		from{
+			opacity:0;
+		}
+		to{
+			opacity:1;
+		}
+	}
+/* end of keyframe definitions */	
+	
+     main{
+	      width:39%;
+		  height:75%;
+		  background-color:#35364d;
+		  padding-top:160px;
+		  margin:0px auto;
+		  margin-top:20px;
+		  margin-bottom:70px;
+		  position:relative;
+		 } 
+	 main::before{
+          content:"";
+          width:150px;
+		  background-color:#666;
+		  box-shadow:0px 0px 10px 10px #2b2c3e;
+		  position:absolute;
+		  bottom:2px;
+		  z-index:-1;
+		  right:12px;
+		  transform:rotate(8deg);
+		}
+    main::after{
+          content:"";
+          width:150px;
+		  background-color:#666;
+		  box-shadow:0px 0px 10px 10px #2b2c3e;
+		  position:absolute;
+		  bottom:2px;
+		  z-index:-1;
+		  left:12px;
+		  transform:rotate(-8deg);
+		}
+	img[title = 'CSS Life']{
+          width:12%;
+          }	
+	.outer{
+	      width:120px;
+		  height:120px;
+		  border-radius:50%;
+		  margin:0px auto;
+		  padding-top:20px;
+		  background-color:#c95516;
+		  position:relative;
+		  z-index:2;
+	}	
+	
+	.inner{
+	      width:80px;
+		  height:80px;
+		  border-radius:50%;
+		  background-color:#677617;
+		  background-image:radial-gradient(circle,#677617,#c17d00 50%,#db5309);
+		  position:relative;
+		  margin:0px auto;
+	}	 
+   
+/* Starts the petals from here */
+
+    #petal1{
+          width:40px;
+          height:110px;
+          background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 60%,#da5101);
+          border-radius:50%;
+          transform:rotate(0deg);
+		  position:absolute;
+		  left:226px;
+		  top:60px;
+		  z-index:1;
+		  -webkit-animation:animate1 2s linear;
+    }	
+    #petal2{
+          width:40px;
+          height:110px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#fae8a5 5%,#f8c301 50%,#da5101);
+          border-radius:50%;
+		  transform:rotate(15deg);
+		  position:absolute;
+		  left:256px;
+		  top:62px;
+		  z-index:1;
+		  -webkit-animation:animate2 2s linear;
+	}	
+    #petal3{
+          width:44px;
+          height:105px;
+          background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 60%,#da5101);
+          border-radius:50%;
+		  transform:rotate(30deg);
+		  position:absolute;
+          left:287px;
+          top:76px;
+		  z-index:1;
+		  -webkit-animation:animate3 2s linear;
+    }	
+    #petal4{
+          width:40px;
+          height:100px;
+          background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 40%,#da5101);
+          border-radius:50%;
+		  transform:rotate(45deg);
+          position:absolute;
+          left:310px;
+          top:102px;
+          z-index:1;
+		  -webkit-animation:animate4 2s linear;
+    }
+    #petal5{
+          width:44px;
+          height:110px;
+          background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 70%,#da5101);
+          border-radius:50%;
+		  transform:rotate(65deg);
+          position:absolute;
+          left:330px;
+          top:116px;
+          z-index:1;
+		  -webkit-animation:animate5 2s linear;
+    }	
+    #petal6{
+          width:44px;
+          height:107px;
+          background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 60%,#da5101);
+          border-radius:50%;
+		  transform:rotate(85deg);
+          position:absolute;
+          left:332px;
+          top:148px;
+          z-index:1;
+		  -webkit-animation:animate6 2s linear;
+    }	
+    #petal7{
+          width:39px;
+          height:104px;
+          background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 50%,#da5101);
+          border-radius:50%;
+		  transform:rotate(105deg);
+          position:absolute;
+          left:328px;
+          top:180px;
+          z-index:1;
+		  -webkit-animation:animate7 2s linear;
+    }	
+    #petal8{
+          width:40px;
+          height:107px;
+          background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 40%,#da5101);
+          border-radius:50%;
+		  transform:rotate(120deg);
+          position:absolute;
+          left:320px;
+          top:210px;
+          z-index:1;
+		  -webkit-animation:animate8 2s linear;
+    }
+    #petal9{
+          width:42px;
+          height:107px;
+          background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 60%,#da5101);
+          border-radius:50%;
+		  transform:rotate(130deg);
+          position:absolute;
+          left:302px;
+          top:237px;
+          z-index:1;
+		  -webkit-animation:animate9 2s linear;
+    }	
+	#petal10{
+	      width:40px;
+		  height:105px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 60%,#da5101);
+          border-radius:50%;
+		  transform:rotate(150deg);
+          position:absolute;
+          left:285px;
+          top:257px;
+          z-index:1;
+		  -webkit-animation:animate10 2s linear;
+	}
+    #petal11{
+	      width:40px;
+		  height:105px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 60%,#da5101);
+          border-radius:50%;
+		  transform:rotate(170deg);
+          position:absolute;
+          left:253px;
+          top:268px;
+          z-index:1;
+		  -webkit-animation:animate11 2s linear;
+	}
+    #petal12{
+	      width:40px;
+		  height:105px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 20%,#da5101);
+          border-radius:50%;
+		  transform:rotate(180deg);
+          position:absolute;
+          left:223px;
+          top:268px;
+          z-index:1;
+		  -webkit-animation:animate12 2s linear;
+	}
+    #petal13{
+	      width:40px;
+		  height:105px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 30%,#da5101);
+          border-radius:50%;
+		  transform:rotate(195deg);
+          position:absolute;
+          left:193px;
+          top:263px;
+          z-index:1;
+		  -webkit-animation:animate13 2s linear;
+	}
+    #petal14{
+	      width:37px;
+		  height:102px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 50%,#da5101);
+          border-radius:50%;
+		  transform:rotate(215deg);
+          position:absolute;
+          left:167px;
+          top:250px;
+          z-index:1;
+		  -webkit-animation:animate14 2s linear;
+	}
+    #petal15{
+	      width:40px;
+		  height:105px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 35%,#da5101);
+          border-radius:50%;
+		  transform:rotate(235deg);
+          position:absolute;
+          left:146px;
+          top:225px;
+          z-index:1;
+		  -webkit-animation:animate15 2s linear;
+	}
+    #petal16{
+	      width:40px;
+		  height:105px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 45%,#da5101);
+          border-radius:50%;
+		  transform:rotate(255deg);
+          position:absolute;
+          left:129px;
+          top:200px;
+          z-index:1;
+		  -webkit-animation:animate16 2s linear;
+	}
+    #petal17{
+	      width:37px;
+		  height:107px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 65%,#da5101);
+          border-radius:50%;
+		  transform:rotate(275deg);
+          position:absolute;
+          left:123px;
+          top:170px;
+          z-index:1;
+		  -webkit-animation:animate17 2s linear;
+	}
+    #petal18{
+	      width:40px;
+		  height:107px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 60%,#da5101);
+          border-radius:50%;
+		  transform:rotate(295deg);
+          position:absolute;
+          left:125px;
+          top:140px;
+          z-index:1;
+		  -webkit-animation:animate18 2s linear;
+	}
+    #petal19{
+	      width:40px;
+		  height:109px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 60%,#da5101);
+          border-radius:50%;
+		  transform:rotate(310deg);
+          position:absolute;
+          left:140px;
+          top:109px;
+          z-index:1;
+		  -webkit-animation:animate19 2s linear;
+	}
+    #petal20{
+	      width:40px;
+		  height:110px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 30%,#da5101);
+          border-radius:50%;
+		  transform:rotate(330deg);
+          position:absolute;
+          left:165px;
+          top:82px;
+          z-index:1;
+		  -webkit-animation:animate20 2s linear;
+	}
+    #petal21{
+	      width:35px;
+		  height:105px;
+		  background-color:yellow;
+		  background-image:linear-gradient(to bottom,#f8c301 20%,#da5101);
+          border-radius:50%;
+		  transform:rotate(345deg);
+          position:absolute;
+          left:195px;
+          top:72px;
+          z-index:1;
+		  -webkit-animation:animate21 2s linear;
+	}	
+	#stick{
+	      width:20px;
+		  height:136px;
+		  background-color:#6bac16;
+		  background-image:linear-gradient(to right,#568e0e 5%,#6bac16 95%);
+		  position:absolute;
+		  top:350px;
+		  left:252px;
+		  -webkit-animation:animate22 2s linear;
+	}
+	footer{
+			padding:10px 0px;
+			background-color:darkslategray;
+			background:linear-gradient(to right, darkslategray, #368383, darkslategray);
+		}	
+	footer img{
+			width:10%;
+			display:block;
+			margin:0 auto;
+			padding-right:20px;
+		    border-right:1px dotted #fff;
+			position:relative;
+		}	
+	footer::after{
+			content:"\00A9" "Somnath Mukherjee";
+			position:absolute;
+			bottom:40px;
+			left:740px;
+			color:#eaeaea;
+			font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		}

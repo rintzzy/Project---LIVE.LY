@@ -1,0 +1,501 @@
+@charset "utf-8";
+/* CSS Document of PROJECT LIVE.LY */
+
+/* font-faces for entire site */
+	@import url('font-face-lively.css');
+/* one custom keyframe animation */
+	@-webkit-keyframes fadeInscaleUp{
+		from{
+			opacity:0;
+			transform:scale(0.5);
+			}
+		to{
+			opacity:1;
+			transform:scale(1);
+			}	
+		}
+	.fadeInscaleUp{
+		-webkit-animation:fadeInscaleUp 2s linear;
+		}
+
+body{
+		margin:0;
+		}
+	#loader{
+		position:absolute;
+		left:45%;
+		top:80%;
+		z-index:1;
+		}	
+	main{
+		transform-style:preserve-3d;
+		perspective:1000px;
+		}	
+/* the first introductory page */		
+	#intro{
+	    width:100vw;
+		min-height:100vh;
+		background:url('../images/swirl_pattern.png') repeat;
+		overflow:hidden;
+		position:absolute;
+		z-index:3;
+	}
+/* the page that contains the actual contents */	
+	#content{
+		width:98.7vw;
+		background:url('../images/congruent_pentagon.png') repeat;
+		display:none;
+		position:absolute;
+		left:0;
+		top:0;
+		z-index:2;
+	}
+	.shadow{
+		height:100vh;
+		box-sizing:border-box;
+		transform-style:preserve-3d;
+		perspective:100px;
+		background:radial-gradient(circle at center center,rgba(255,255,255,0.5) 5%, rgba(47,49,49,0.3));
+	}
+	
+/* @@@@ styles of the intro page @@@@ */	
+	#intro h2{
+		font:normal normal normal 3em/normal 'Octin Prison';
+		color:#09F;
+		text-align:center;
+		text-shadow:1px 1px #aaa;
+		margin:0;
+		padding:0.83em 0em;
+		-moz-text-decoration-line:underline;
+		-moz-text-decoration-style:dotted;
+		-moz-text-decoration-color:#09F;
+		-webkit-animation-duration:2s;
+		-moz-animation-duration:2s;
+		-ms-animation-duration:2s;
+		animation-duration:2s;
+		}	
+	#intro ul{margin:0 auto; width:20%;}
+    #intro ul li{
+		font:italic normal normal 1.5em/normal 'Segoe UI';
+		color:tomato;
+		list-style-type:circle;
+		text-align:left;
+		margin-bottom:0.5em;
+	}	
+    #intro ul li:first-child{
+		-webkit-animation-delay:2s;
+		-moz-animation-delay:2s;
+		-ms-animation-delay:2s;
+		animation-delay:2s;
+		}
+	#intro ul li:nth-child(2){
+		-webkit-animation-delay:4s;
+		-moz-animation-delay:4s;
+		-ms-animation-delay:4s;
+		animation-delay:4s;
+		}
+	#intro ul li:last-child{
+		-webkit-animation-delay:6s;
+		-moz-animation-delay:6s;
+		-ms-animation-delay:6s;
+		animation-delay:6s;
+		}		
+	#intro ul+h2{
+		font:bold normal normal 3.25em/normal 'Grand Hotel';
+		color:#444;
+		text-align:center;
+		-webkit-animation-delay:8s;
+		-moz-animation-delay:8s;
+		-ms-animation-delay:8s;
+		animation-delay:8s;
+	}
+	.logo_wrapper{
+		background:darkslategray;
+		padding:10px 0px;
+		position:relative;
+	}
+	.logo_wrapper::after{
+		content:"";
+		position:absolute;
+		width:100%;
+		height:20px;
+		background:url(../images/angles.png) 0 0 repeat-x;
+		top:-18px;
+		}
+	#logo{
+		display:block;
+		margin:0 auto;
+		-webkit-animation-delay:12s;
+		-moz-animation-delay:12s;
+		-ms-animation-delay:12s;
+		animation-delay:12s;
+		}
+	.foot_logo_wrapper{
+		width:100%;
+		position:absolute;
+		bottom:0;
+	}	
+	#intro input[type='button']{
+		padding:8px;
+		box-sizing:border-box;
+		text-align:center;
+		font:normal normal normal 1.25em/normal 'Segoe UI Light', 'Segoe UI';
+		color:whitesmoke;
+		background:#111;
+		transition:all 1s linear;
+		border:none;
+		-webkit-appearance:none;
+		appearance:none;
+		cursor:pointer;
+		display:block;
+		margin:0px auto;
+		-webkit-animation-delay:10s;
+		-moz-animation-delay:10s;
+		-ms-animation-delay:10s;
+		animation-delay:10s;
+		transform:rotateY(-5deg);
+		}
+	#intro input[type='button']:hover{
+		background:#609;
+		}	
+	
+/* @@@@ styles of the content page @@@@ */
+	figure{
+		width:14.84%;
+		margin:0;
+		margin-right:20px;
+		background:rgba(0,0,0,0.8);
+		-webkit-box-reflect:below -93px linear-gradient(to bottom, transparent, rgba(255,255,255,0.6) 80%);
+		transition:all 1s ease;
+	}
+	figure:first-child{
+		-webkit-animation-delay:3s;
+		-moz-animation-delay:3s;
+		-ms-animation-delay:3s;
+		animation-delay:3s;
+		}
+	figure:nth-child(2){
+		-webkit-animation-delay:2s;
+		-moz-animation-delay:2s;
+		-ms-animation-delay:2s;
+		animation-delay:2s;
+		}	
+	figure:nth-child(3){
+		-webkit-animation-delay:1s;
+		-moz-animation-delay:1s;
+		-ms-animation-delay:1s;
+		animation-delay:1s;
+		}		
+	figure a img{
+		width:100%;
+		display:block;
+	}
+	.srcBtn{
+		-webkit-appearance:none;
+		background:transparent;
+		border:1px solid #fff;
+		border-radius:3px;
+		padding-bottom:4px;
+		font:normal normal normal 0.825em/normal 'Segoe UI';
+		color:#fff;
+		text-align:center;
+		position:absolute;
+		top:200px;
+		left:29%;
+		cursor:pointer;
+		display:none;
+		}
+	figure img:hover{
+		opacity:0.8;
+	}
+	figcaption{
+		background:white;
+		padding:5px;
+		border-bottom-left-radius:4px;
+		border-bottom-right-radius:4px;
+		text-align:center;
+		font:normal normal normal 0.82em/normal 'Segoe UI';
+	}
+	.gallery{
+		display:flex;
+		flex-flow:row nowrap;
+		justify-content:flex-end;
+		padding-bottom:55px;
+		padding-top:34px;
+		}
+	.description{
+		display:flex;
+		flex-flow:row nowrap;
+		justify-content:flex-start;
+		margin-left:20px;
+		/*padding-bottom:94px;*/
+		-webkit-animation-duration:2s; -webkit-animation-delay:6s;
+		-moz-animation-duration:2s; -moz-animation-delay:6s;
+		-ms-animation-duration:2s; -moz-animation-delay:6s;
+		animation-duration:2s; animation-delay:6s;
+	}	
+	.description article{
+		width:55%;
+		padding:10px;
+		border:5px solid rgb(0,162,232);
+		border-radius:8px;
+		box-shadow:0px 0px 15px rgba(0,162,232,0.5);
+		box-sizing:border-box;
+		background:url('../images/subtlenet2.png') repeat;
+		position:relative;
+	}
+    .description article::after{
+		content:"";
+		width:0;
+		height:0;
+		border-width:70px;
+		border-style:solid;
+		border-color:transparent rgba(0,162,232,1) transparent transparent;
+		position:absolute;
+		left:10%;
+		top:-70px;
+		z-index:-1;
+		transform:rotate(6deg);
+	}
+	.description article p{
+		font:normal normal normal 1.225em/2 'Capsuula','RistrettoSlabPro';
+		color:#666;
+		margin:0;
+	}
+	.features{
+		padding:50px;
+		background:url('../images/green_cup.png');
+		display:none;
+		box-sizing:border-box;
+		flex-flow:row nowrap;
+		justify-content:space-between;
+		-webkit-animation-timing-function:linear;
+		-moz-animation-timing-function:linear;
+		-ms-animation-timing-function:linear;
+		animation-timing-function:linear;
+	}
+	.featurelist{
+		width:22.01%;
+		height:256px;
+		padding:10px;
+		box-sizing:border-box;
+		background:radial-gradient(circle,rgb(26,176,157) 10%,rgb(21,145,130));
+		border-radius:50%;
+		margin-right:20px;
+		box-shadow:1px 2px 5px rgb(10,69,62);
+	}
+	.featurelist:first-child{
+		-webkit-animation-duration:2s; -webkit-animation-delay:1s;
+		-moz-animation-duration:2s; -moz-animation-delay:1s;
+		-ms-animation-duration:2s; -ms-animation-delay:1s;
+		animation-duration:2s; animation-delay:1s;
+		}
+	.featurelist:nth-child(2){
+		-webkit-animation-duration:4s;
+		-moz-animation-duration:4s;
+		-ms-animation-duration:4s;
+		animation-duration:4s;
+		}		
+	.featurelist:last-child{
+		margin-right:0;
+		-webkit-animation-duration:6s;
+		-moz-animation-duration:6s;
+		-ms-animation-duration:6s;
+		animation-duration:6s;
+	}
+	.featurelist h1:first-child{
+		font:normal normal normal 3.5em/normal 'Hobo R';
+		color:#000;
+		text-align:center;
+		text-shadow:1px 2px #fff;
+		margin-top:30px;
+		margin-bottom:0px;
+	}
+	.featurelist h1:last-child{
+		font:normal normal normal 5em/normal 'Gothic Ultra';
+		color:rgb(255,201,14);
+		text-align:center;
+		margin-top:0px;
+		margin-bottom:0px;
+		transition:all 1s ease-in;
+	}
+	.featurelist h1:last-child:hover{
+		color:whitesmoke;
+	}
+	.author{
+		width:100%;
+		background:lightcoral;
+		display:none;
+		-webkit-animation-duration:2s; -webkit-animation-timing-function:linear;
+		-moz-animation-duration:2s; -moz-animation-timing-function:linear;
+		-ms-animation-duration:2s; -ms-animation-timing-function:linear;
+		animation-duration:2s; animation-timing-function:linear;
+	}
+	.author h1{
+		font:normal normal normal 5em/normal 'Segoe UI Light', 'Segoe UI';
+		color:#000;
+		text-align:center;
+		margin:0;
+		padding:0.83em 0em;
+		-webkit-animation-duration:4s;
+		-moz-animation-duration:4s;
+		-ms-animation-duration:4s;
+		animation-duration:4s;
+	}
+	.author img{
+		width:8%;
+		border-radius:50%;
+		padding:10px;
+		background:lightcoral;
+		position:absolute;
+		top:996px;
+		left:20px;
+		-webkit-animation-delay:2s;
+		-moz-animation-delay:2s;
+		-ms-animation-delay:2s;
+		animation-delay:2s;
+	}
+	.socialbar{
+		width:25%;
+		margin:0 auto;
+	}
+	.socialbar i{
+		margin-right:10px;
+		-webkit-transition:all 1s linear;
+		-moz-transition:all 1s linear;
+		-ms-transition:all 1s linear;
+		transition:all 1s linear;
+	}
+	.socialbar a{
+		text-decoration:none;
+		color:#000;
+	}
+	.socialbar a:hover{
+		color:#fff;
+	}	
+	.hoverAction{
+		-webkit-transform:translateY(-10px);
+		-webkit-transition:all 2s ease-out;
+		-moz-transform:translateY(-10px);
+		-moz-transition:all 2s ease-out;
+		-ms-transform:translateY(-10px);
+		-ms-transition:all 2s ease-out;
+		transform:translateY(-10px);
+		transition:all 2s ease-out;
+		}
+
+/* =============================================================================================================================================== */
+/* Breaking point for Tablet devices : Amazon Kindle Fire HD 7", Kindle Fire HD 8.9", Kindle Fire, Google Nexus 7, Samsung Galaxy Tab, Apple iPad */
+		/* Amazon Kindle Fire HD 7" : Perfect */
+		/* Amazon Kindle Fire       : Perfect */
+	  /* Amazon Kindle Fire HD 8.9" : Perfect */
+		/* Samsung Galaxy Tab       : Perfect */
+		/* Google Nexus 7           : Perfect */
+		/* Apple iPad(all)          : Perfect */
+/* For Amazon Kindle Fire, Samsung Galaxy Tab, Google Nexus 7, Apple iPad 1/2/Mini */		
+@media (max-width:768px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio:1){ /* Portrait mode */
+	.shadow{padding-top:6em;}
+	#intro ul{width:39%;}
+	#intro h2:not(.slideInLeft){padding:0.43em 0em 0.63em; font-size:2em;}
+	#intro ul+h2{font-size:2.235em;}
+	#intro ul li{font-size:1.125em;}
+	#logo{width:20%;}
+	#intro input[type='button']{padding:8px; font:normal normal normal 1.125em/normal 'Segoe UI Light', 'Segoe UI';}
+	.description article{width:65%;}
+	.srcBtn{top:120px; left:22%;}
+	figure{width:20%;}
+	.features{padding:50px 10px;}
+	.featurelist{width:30%; height:220px; margin-right:0px;}
+	.featurelist h1:first-child{font:normal normal normal 2.5em/normal 'Hobo R';}
+	.featurelist h1:last-child{font:normal normal normal 3.5em/normal 'Gothic Ultra';}
+	.author h1{font:normal normal normal 3.5em/normal 'Segoe UI Light', 'Segoe UI';}
+	.author img{width:10%; top:82%;}
+	.socialbar{width:56%;}
+}		
+@media (min-width:800px) and (max-width:1024px) and(orientation:landscape) and (-webkit-min-device-pixel-ratio:1){ /* Landscape mode */
+	.shadow{padding-top:3em;}
+	#intro ul{width:27%;}
+	#intro h2:not(.slideInLeft){padding:0.43em 0em 0.63em; font-size:2em;}
+	#intro ul+h2{font-size:2.125em;}
+	#intro ul li{font-size:1.125em;}
+	#logo{width:20%;}
+	#intro input[type='button']{padding:8px; font:normal normal normal 1.125em/normal 'Segoe UI Light', 'Segoe UI';}
+	.description article{width:85%;}
+	.description article p{font:normal normal normal 1.125em/1.4 'Capsuula','RistrettoSlabPro';}
+	.srcBtn{top:110px; left:21%;}
+	.features{padding:50px 10px;}
+	.featurelist{width:30%; height:220px; margin-right:0px;}
+	.featurelist h1:first-child{font:normal normal normal 2.5em/normal 'Hobo R';}
+	.featurelist h1:last-child{font:normal normal normal 3.5em/normal 'Gothic Ultra';}
+	.author h1{font:normal normal normal 3.5em/normal 'Segoe UI Light', 'Segoe UI';}
+	.author img{width:8%; top:78%;}
+	.socialbar{width:35%;}
+}
+/* =============================================================================================================================================== */
+/* Breaking point for Smartphone : Apple iPhone, Samsung Galaxy, HTC Desire, HTC One, LG, Asus and the like */
+/* For Apple iPhone 3/3GS/4/5/5S which has device-pixel-ratio = 1 */
+@media (max-width:320px) and (orientation:portrait) and (-webkit-device-pixel-ratio:1){
+	.shadow{padding-top:8em;}
+	#content .shadow{height:85vh; padding:2em 5px 0px;}
+	#badge img{width:25%;}
+	#intro ul{width:55%;}
+	#intro h2:not(.slideInLeft){padding-top:0em; padding-bottom:1em; font-size:1em;}
+	#intro ul+h2{font-size:1.275em; padding-top:0.5em;}
+	#intro ul li{font-size:0.75em;}
+	#logo{width:25%;}
+	#intro input[type='button']{padding:4px; font:normal normal normal 0.575em/normal 'Segoe UI Light', 'Segoe UI';}
+	.logo_wrapper::after{height:10px; top:-8px; background:url(../images/angles_2.png) 0 0 repeat-x;}
+	.gallery{justify-content:space-between;}
+	.gallery figure{width:25%; margin-right:3px;}
+	.gallery figure:last-child{margin-right:0px;}
+	.gallery figcaption{font:normal normal normal 0.62em/normal 'Segoe UI';}
+	.srcBtn{top:50px; left:15%; font:normal normal normal 0.525em/normal 'Segoe UI';}
+	.description article{width:98%; margin:0 auto; padding:5px; border:2px solid rgb(0,162,232); border-radius:4px; top:-20px;}
+	.description article::after{border-width:40px; left:10%; top:-42px;}
+	.description article p{font:normal normal normal 0.825em/1.34 'Capsuula','RistrettoSlabPro';}
+	.features{padding:15px 5px;}
+	.featurelist{width:25%; height:80px; margin-right:0px;}
+	.featurelist h1:first-child{margin-top:10px; font:normal normal normal 1em/normal 'Hobo R';}
+	.featurelist h1:last-child{font:normal normal normal 1.35em/normal 'Gothic Ultra';}
+	.author h1{font:normal normal normal 2em/normal 'Segoe UI Light', 'Segoe UI';}
+	.author img{width:10%; left:10px; top:78%;}
+	.socialbar i{margin-right:3px;}
+	.socialbar{width:80%;}
+}
+/* For larger screen Retina displays i.e. iPhone 6 and 6 Plus*/
+/*	@media (min-width:350px) and (-webkit-min-device-pixel-ratio:2){
+	.shadow{padding-top:2em;}
+	#intro ul{width:60%;}
+	#intro h2{padding-top:0em; padding-bottom:1.25em; font-size:1.225em;}
+	#intro ul+h2{font-size:1.325em; padding-top:1.5em;}
+	#intro ul li{font-size:1em;}
+	#logo{width:40%;}
+	#intro input[type='button']{padding:3px; font:normal normal normal 0.875em/normal 'Segoe UI Light', 'Segoe UI';}
+	.logo_wrapper::after{height:10px; top:-8px; background:url(../images/angles_2.png) 0 0 repeat-x;}
+	figure{width:50%;}
+	figcaption{font:normal normal normal 0.62em/normal 'Segoe UI';}
+	.description article{width:98%; padding:5px; border:2px solid rgb(0,162,232); border-radius:4px;}
+	.description article::after{border-width:50px; left:10%; top:-75px;}
+	.description article p{font:normal normal normal 0.725em/1 'Capsuula','RistrettoSlabPro';}
+}*/ 
+/* ============================================================================================================================================== */
+/* Breaking point for 480p Television and Browser resized mode */
+@media (max-width:780px){
+	.shadow{padding-top:6em;}
+	#intro ul{width:39%;}
+	#intro h2:not(.slideInLeft){padding:0.43em 0em 0.63em; font-size:2em;}
+	#intro ul+h2{font-size:2.235em;}
+	#intro ul li{font-size:1.125em;}
+	#logo{width:20%;}
+	#intro input[type='button']{padding:8px; font:normal normal normal 1.125em/normal 'Segoe UI Light', 'Segoe UI';}
+	.description article{width:65%;}
+	.srcBtn{top:120px; left:22%;}
+	figure{width:20%;}
+	.features{padding:50px 10px;}
+	.featurelist{width:30%; height:220px; margin-right:0px;}
+	.featurelist h1:first-child{font:normal normal normal 2.5em/normal 'Hobo R';}
+	.featurelist h1:last-child{font:normal normal normal 3.5em/normal 'Gothic Ultra';}
+	.author h1{font:normal normal normal 3.5em/normal 'Segoe UI Light', 'Segoe UI';}
+	.author img{width:10%; top:82%;}
+	.socialbar{width:56%;}
+}
